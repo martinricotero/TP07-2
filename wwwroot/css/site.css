@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'Jaldi';
+    src: url('Jaldi-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .navbar {
+    display: flex;
+    font-family: 'Jaldi', sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: #6ABEA5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-imagen {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  .navbar-titulo {
+    margin: 0;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .footer {
+    background-image: url('img/footer.PNG');
+    background-position: center bottom;
+    background-size: cover;
+    padding: 50px 0;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .footer-cont {
+    text-align: center;
+  }
+
+
+body {
+    font-family: 'Jaldi', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #383838;
+}
+
+.juego-contenedor {
+    font-family: 'Jaldi', sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 220px auto 20px;
+    position: relative;
+}
+
+.foto-juego {
+    margin-left: -155px;
+    margin-top: -50px;
+}
+
+.opciones-contenedor {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton1,
+.boton2 {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 80px;
+    margin-top: -70px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.boton1 {
+    background-color: #4574c9;
+}
+
+.boton2 {
+    background-color: #d02b35;
+}
+
+.config-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; 
+    margin-top: -60px; 
+}
+
+.config-input {
+    padding: 10px;
+    margin: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(33.33% - 10px);
+}
+
+.boton3 {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px; 
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #dfca43;
+    margin-top: 0px;
+}
+.opciones-lista {
+    list-style: none;
+    padding: 0;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.opcion {
+    padding: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 300px;
+    color: #333;
+    font-size: 16px;
+}
+
+.texto-incorrecto {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: -30px auto 20px; 
+    color: red;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: white; 
+    padding: 5px 15px;
+    border-radius: 10px; 
+}
+
+.texto-correcto {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: -30px auto 20px; 
+    color: green;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: white; 
+    padding: 5px 15px;
+    border-radius: 10px; 
+}
+
+.resaltada2 {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.resaltada1 {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+
+.gif {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.juego-titulo {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.boton4 {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: -50px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #d95db1;
+    cursor: pointer;
+}
+
+.footer {
+    background-image: url('img/footer.PNG');
+    background-position: center bottom;
+    background-size: cover;
+    padding: 50px 0;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.footer-cont {
+    text-align: center;
+}

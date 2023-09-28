@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] = "Respuesta";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="site.css"> 
+</head>
+<body>
+    <div class="contenedor">
+        <main role="main" class="pb-3">
+            <div class="juego-contenedor">
+                <img src="img/Preguntados.png" alt="img" class="foto-juego">
+                @if(ViewBag.Respuesta == true)
+    {
+        <div class="texto-Correcto">¡Respuesta Correcta!</div>
+    }
+    else
+    {
+        <div class="texto-incorrecto">Respuesta Incorrecta</div>
+    }
+
+                <p class="juego-titulo">Pregunta: @ViewBag.Pregunta.Contenido</p>
+            </div>
+        </main>
+    </div>
+    <ul class="opciones-lista">
+    @foreach (var respuesta in ViewBag.Respuestas)
+    {
+        <li class="opcion @(ViewBag.RespuestaCorrecta == true ? "resaltada2" : "") @(ViewBag.RespuestaCorrecta == false ? "resaltada1" : "")">@respuesta.Contenido</li>
+    }
+</ul>
+
+    <a href="Jugar" class="boton-volver">Volver a Jugar</a>
+</body>

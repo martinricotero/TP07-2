@@ -1,0 +1,24 @@
+@{
+    ViewBag.Title = "Juego";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="site.css"> 
+</head>
+<body>
+     <div class="cont">
+        <main role="main" class="pb-3">
+            <div class="juego-contenedor">
+                <img src="~/img/Preguntados.png" alt="Game Image" class="foto-juego">
+                <p class="juego-titulo">¡Bienvenido a PreguntadORT! Un juego de trivia sobre cultura, historia, y música. Para continuar, presione una de las siguientes opciones </p>
+            </div>
+        </main>
+    </div>
+    <div class="opciones-contenedor">
+        <a href="@Url.Action("ConfigurarJuego", "Home")" class="boton1">Configuración</a>
+    </div>
+</body>
+

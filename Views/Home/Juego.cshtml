@@ -1,0 +1,34 @@
+@{
+    ViewData["Title"] = "Juego";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="site.css"> 
+</head>
+<body>
+    <div class="contenedor">
+        <main role="main" class="pb-3">
+            <div class="juego-contenedor">
+                <img src="img/Preguntados.png" alt="img" class="foto-juego">
+                <p class="juego-titulo">Pregunta: @ViewBag.Pregunta.Contenido</p>
+            </div>
+        </main>
+    </div>
+    <ul class="opciones-lista">
+        @foreach (var respuesta in ViewBag.Respuestas)
+        {
+            <li class="opcion">
+                <a href='@Url.Action("VerificarRespuesta", "Home", new { idPregunta = ViewBag.Pregunta.IdPregunta, idRespuesta = respuesta.IdRespuesta })'>
+                    <button class="opcion-button">@respuesta.Contenido</button>
+                </a>
+            </li>
+        }
+    </ul>
+
+    <p>Nombre de usuario: @ViewBag.Username</p>
+    <p>Puntaje actual: @ViewBag.PuntajeFinal</p>
+    <p>Pregunta actual: @ViewBag.Pregunta.Enunciado</p>
+</body>

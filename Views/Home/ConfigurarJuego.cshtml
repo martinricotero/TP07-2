@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = "Configurar Juego";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurar Juego</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <main role="main" class="pb-3">
+            <div class="juego-contenedor">
+                <img src="~/img/Preguntados.png" alt="imagen" class="foto-juego">
+                <p class="juego-titulo">¡Bienvenido a las configuraciones del juego! Por favor, elige entre las tres categorías y dos dificultades, e ingresa un nombre de usuario.</p>
+            </div>
+        </main>
+    </div>
+
+    <form method="get" action='@Url.Action("Comenzar", "Home")' class="opciones-contenedor">
+        <div class="config-inputs">
+            <label for="username">Nombre Usuario:</label>
+            <input type="text" id="username" name="username" class="config-input" required><br>
+            
+            <p>Dificultad:</p>
+            @foreach (var palabra in ViewBag.Dificultad)
+            {
+                <input type="radio" name="dificultad" value="@palabra.IdDificultad">@palabra.Nombre<br>
+            }
+            <input type="radio" name="dificultad" value="-1">Todas las dificultades<br>
+            
+            <p>Categoría:</p>
+            @foreach (var palabra in ViewBag.Categoria)
+            {
+                <input type="radio" name="categoria" value="@palabra.IdCategoria">@palabra.Nombre<br>
+            }
+            <input type="radio" name="categoria" value="-1">Todas las categorías<br>
+        </div>
+        <button type="submit" class="boton3">Comenzar Juego</button>
+    </form>
+</body>

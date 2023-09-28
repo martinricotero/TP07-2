@@ -1,0 +1,17 @@
+/* _content/TP07/Views/Shared/_Layout.cshtml.rz.scp.css */
+.footer[b-y2vwikysst] {
+    background-image: url('img/footer.PNG');
+    background-position: center bottom;
+    background-size: cover;
+    padding: 50px 0;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.footer-cont[b-y2vwikysst] {
+    text-align: center;
+}

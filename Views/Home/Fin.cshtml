@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Fin";
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fin</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <div class="contenedor">
+        <main role="main" class="pb-3">
+            <div class="juego-contenedor">
+                <img src="~/img/shinji.gif" alt="Fin del Juego" class="gif">
+                <br>
+                <p class="juego-subtitulo">Usuario: @ViewBag.Username</p>
+                <p class="juego-subtitulo">Puntaje: @ViewBag.PuntajeActual</p>
+                <p class="juego-titulo">¡Felicidades @ViewBag.Username!</p>
+            </div>
+        </main>
+    </div>
+    <div class="opciones-contenedor">
+        <a href="~/Home/Index" class="boton4">Volver al Inicio</a>
+    </div>
+</body>
+
